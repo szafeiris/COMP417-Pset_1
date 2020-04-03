@@ -4,4 +4,4 @@ This repository cointains the code for exercise 3.9 from the 2nd edition of AIMA
 
 ## Instuctions
 **Python version used: 3.7 (64-bit).** \
-Run the simulation with the command: `$  python mc.py`
+Run the simulation with the command: `$  python missionaries_and_cannibals.py`
