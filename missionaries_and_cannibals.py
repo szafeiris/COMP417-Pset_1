@@ -25,7 +25,7 @@ class State():
 			   self.missionaryRight == other.missionaryRight
 
 	def __hash__(self):
-		return hash((self.cannibalLeft, self.missionaryLeft, self.boat, self.cannibalRight, self.missionaryRight))
+		return hash(self.__str__())
 		
 	def __str__(self):
 		return f'({self.missionaryLeft}, {self.cannibalLeft}, {self.boat}, {self.missionaryRight}, {self.cannibalRight})'
@@ -101,7 +101,6 @@ def BFS(initial_state):
 	if initial_state.isGoal():
 		return initial_state
 	frontier = list()
-	explored = set()
 	frontier.append(initial_state)
 	while frontier:
 		state = frontier.pop(0)
